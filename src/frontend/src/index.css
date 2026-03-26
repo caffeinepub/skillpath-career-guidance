@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* SkillPath Design Tokens - based on teal/blue edtech palette */
+    /* Primary CTA blue: #2C7FB2 */
+    --primary: 0.52 0.13 230;
+    --primary-foreground: 1 0 0;
+
+    /* Page background: #F3F5F7 */
+    --background: 0.968 0.005 230;
+    --foreground: 0.22 0.03 250;
+
+    /* Card white */
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.03 250;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.03 250;
+
+    /* Secondary - light blue panel: #EAF6FC */
+    --secondary: 0.96 0.025 215;
+    --secondary-foreground: 0.22 0.03 250;
+
+    --muted: 0.96 0.025 215;
+    --muted-foreground: 0.46 0.02 250;
+
+    --accent: 0.73 0.19 58;
+    --accent-foreground: 0.15 0.02 250;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Card border: #E5E7EB */
+    --border: 0.91 0.005 250;
+    --input: 0.91 0.005 250;
+    --ring: 0.52 0.13 230;
+
+    --chart-1: 0.52 0.13 230;
+    --chart-2: 0.38 0.1 217;
+    --chart-3: 0.73 0.19 58;
+    --chart-4: 0.65 0.15 150;
+    --chart-5: 0.7 0.12 180;
+
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.22 0.03 250;
+    --sidebar-primary: 0.52 0.13 230;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.96 0.025 215;
+    --sidebar-accent-foreground: 0.22 0.03 250;
+    --sidebar-border: 0.91 0.005 250;
+    --sidebar-ring: 0.52 0.13 230;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
